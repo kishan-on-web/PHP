@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        table {
+            border-style: outset;
+            border-width: 4px;
+            width: 35%;
+        }
+        th,td {
+            border: 1px solid black;
+            font-family: sans-serif;
+        }
+        th {
+            background-color: rgb(248, 248, 172);
+            color: rgb(233, 99, 99);
+            height: 30px;
+        }
+        td {
+            padding: 5px 15px;
+            background-color: rgb(142, 219, 243);
+            font-size: 15px;
+        }
+        .submit{
+            width: 138px;
+            height: 45px;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" action="uregistration.php">
+    <table>
+        <tr>
+            <th colspan="2">Registration Form</th>
+        </tr>
+        <tr>
+            <td>Enter Id</td>
+            <td><input type="text" name="id" id="id"></td>
+        </tr>
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" name="fname" id="fname"></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" name="lname" id="lname"></td>
+        </tr>
+        <tr>
+            <td>Enter Email</td>
+            <td><input type="email" name="email" id="email"></td>
+        </tr>
+        <tr>
+            <td>Enter Password</td>
+            <td><input type="password" name="pass" id="pass"></td>
+        </tr>
+        <tr>
+            <td>Confrom Password</td>
+            <td><input type="password" name="cpass" id="cpass"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" name="submit" id="submit" class="submit" value="submit">
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
